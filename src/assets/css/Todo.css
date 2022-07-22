@@ -1,0 +1,83 @@
+.todoTaskApp {
+  min-height: 100vh;
+  background-color: #4c3a3a;
+  color: #fff;
+  padding: 10px;
+}
+
+#id_todoInput {
+  box-sizing: border-box;
+  height: 30px;
+  width: 35vw;
+}
+
+#id_todoInput.error {
+  border-color: #ff0000;
+}
+
+.addBtn {
+  height: 30px;
+}
+
+.btnContainer button {
+  min-width: 60px;
+}
+
+.editBtn,
+.saveBtn {
+  margin: 0 10px;
+}
+
+.todoTasksListInnerContainer li {
+  margin: 10px;
+  color: #ffe000;
+}
+
+.todoTasksListContentContainer {
+  flex: 1;
+  word-break: break-word;
+}
+
+.todoTasksListContentContainer input.error {
+  border-color: #ff0000;
+}
+
+.todoTasksListInnerContainer {
+  width: 40vw;
+}
+
+button {
+  cursor: pointer;
+}
+
+.todoTaskApp button {
+  background-color: #26889f;
+  border-color: #26889f;
+  color: #fff;
+  /* border-style: outset; */
+}
+
+.todoTaskApp button:hover {
+  background-color: #fff;
+  border-color: #26889f;
+  color: #26889f;
+}
+
+.todoTasksListContentMainContainer.list.active,
+.todoTasksListContentMainContainer.edit.active {
+  display: flex;
+}
+
+.todoTasksListContentMainContainer.list.inactive,
+.todoTasksListContentMainContainer.edit.inactive {
+  display: none;
+}
+
+.errorTxt {
+  color: #ff0000;
+  padding: 5px;
+  background-color: #fff;
+  top: 5px;
+  position: relative;
+  display: inline-block;
+}
